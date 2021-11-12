@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useTheme } from '~/composables'
+import { useTheme } from '~logic/Shared/composables'
 
 const { externalUITheme } = useTheme()
 </script>

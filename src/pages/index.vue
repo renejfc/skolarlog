@@ -1,7 +1,14 @@
 <script setup lang="ts">
-import { useTheme } from '~/composables'
+import { useSupabase } from '~/logic/Supabase/composables/supabase'
+import { useTheme } from '~logic/Shared/composables'
 
 const { isDark, themeShift } = useTheme()
+
+onMounted(async() => {
+  const { data, error } = await useSupabase()
+    .from('profiles')
+    .select('*')
+})
 </script>
 
 <template>
