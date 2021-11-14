@@ -1,21 +1,17 @@
 <script setup lang="ts">
-import { useSupabase } from '~/logic/Supabase/composables/supabase'
-import { useTheme } from '~logic/Shared/composables'
+// import { useSupabase } from '~/logic/Supabase/composables/supabase'
 
-const { isDark, themeShift } = useTheme()
-
-onMounted(async() => {
-  const { data, error } = await useSupabase()
-    .from('profiles')
-    .select('*')
-})
+// onMounted(async() => {
+//   const { data, error } = await useSupabase()
+//     .from('profiles')
+//     .select('*')
+// })
 </script>
 
 <template>
-  <div>
-    <n-button @click="themeShift()">
-      <span v-if="isDark" i-carbon-moon />
-      <span v-else i-carbon-sun />
-    </n-button>
-  </div>
+  <n-layout-content>
+    <h1 class="text-xl font-bold">
+      ^__^
+    </h1>
+  </n-layout-content>
 </template>

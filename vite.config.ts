@@ -7,7 +7,7 @@ import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import Unocss from 'unocss/vite'
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
-import { presetAttributify, presetUno } from 'unocss'
+import { presetUno } from 'unocss'
 import presetIcons from '@unocss/preset-icons'
 import AutoImport from 'unplugin-auto-import/vite'
 
@@ -38,6 +38,7 @@ export default defineConfig({
     Components({
       resolvers: [
         NaiveUiResolver(),
+
         // https://github.com/antfu/vite-plugin-icons
         IconsResolver({
           enabledCollections: [
@@ -55,10 +56,8 @@ export default defineConfig({
 
     // https://github.com/antfu/unocss
     Unocss({
-
       presets: [
         presetUno(),
-        presetAttributify(),
         presetIcons({
           scale: 1.2,
         }),

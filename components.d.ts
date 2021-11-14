@@ -10,6 +10,23 @@ declare module 'vue' {
     NB: typeof import('naive-ui')['NB']
     NButton: typeof import('naive-ui')['NButton']
     NConfigProvider: typeof import('naive-ui')['NConfigProvider']
+    NL: typeof import('naive-ui')['NL']
+    NLa: typeof import('naive-ui')['NLa']
+    NLay: typeof import('naive-ui')['NLay']
+    NLayo: typeof import('naive-ui')['NLayo']
+    NLayou: typeof import('naive-ui')['NLayou']
+    NLayout: typeof import('naive-ui')['NLayout']
+    NLayoutContent: typeof import('naive-ui')['NLayoutContent']
+    NLayoutFooter: typeof import('naive-ui')['NLayoutFooter']
+    NLayoutHeader: typeof import('naive-ui')['NLayoutHeader']
+    NLayoutSider: typeof import('naive-ui')['NLayoutSider']
+    NLoadingBarProvider: typeof import('./src/components/NLoadingBarProvider.vue')['default']
+    NMenu: typeof import('naive-ui')['NMenu']
+    NSpace: typeof import('naive-ui')['NSpace']
+    NSwitch: typeof import('naive-ui')['NSwitch']
+    RegisterIcons: typeof import('./src/components/Sider/RegisterIcons.vue')['default']
+    Sider: typeof import('./src/components/Sider/Sider.vue')['default']
+    ToggleTheme: typeof import('./src/components/ToggleTheme.vue')['default']
   }
 }
 

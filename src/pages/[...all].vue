@@ -1,12 +1,14 @@
 <template>
-  <div class="flex flex-col gap-3 items-center dark:text-#fcfcfc">
-    <p>
-      Not Found
-    </p>
-    <router-link to="/">
-      <p font-bold i-carbon-arrow-left />
-    </router-link>
-  </div>
+  <n-layout-content>
+    <n-space vertical align="center">
+      <p class="mt-10 font-medium">
+        Not Found
+      </p>
+      <router-link to="/">
+        <p class="i-carbon-arrow-left animate-head-shake animate-duration-3000" />
+      </router-link>
+    </n-space>
+  </n-layout-content>
 </template>
 
 <style>
