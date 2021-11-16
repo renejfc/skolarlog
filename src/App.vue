@@ -3,7 +3,7 @@ import { useAuth } from './logic/Auth/composables/auth'
 import { useTheme } from '~logic/Shared/composables'
 import { store } from '~/logic/Auth/store'
 
-const { externalUITheme, isDark } = useTheme()
+const { externalUITheme, isDark, themeOverrides } = useTheme()
 const { currentUserAuth } = useAuth()
 
 onMounted(() => {
@@ -13,7 +13,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <n-config-provider :theme="externalUITheme">
+  <n-config-provider :theme="externalUITheme" :theme-overrides="themeOverrides">
     <n-message-provider placement="bottom-right">
       <n-layout
         has-sider

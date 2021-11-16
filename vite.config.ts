@@ -22,7 +22,9 @@ export default defineConfig({
     Vue(),
 
     // https://github.com/hannoeru/vite-plugin-pages
-    Pages(),
+    Pages({
+      exclude: ['**/components/*.vue'],
+    }),
 
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
@@ -69,6 +71,7 @@ export default defineConfig({
     fs: {
       strict: true,
     },
+    port: 3333,
   },
 
   optimizeDeps: {

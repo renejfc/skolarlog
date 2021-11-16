@@ -30,6 +30,7 @@ export function useLogin() {
     })
 
     if (apiError) error(`${apiError.message} (${apiError.status})`)
+    else window.location.href = '/'
   }
 
   function handleValidate(e: any, ref: HTMLElement | null) {

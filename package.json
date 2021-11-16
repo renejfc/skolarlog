@@ -12,7 +12,8 @@
     "url": "github:renejfc/scolarlog-poc"
   },
   "scripts": {
-    "dev": "vite --port 3333 --open",
+    "dev": "vite",
+    "serve": "pnpm dev --open",
     "build": "vite build",
     "preview": "vite preview"
   },
