@@ -2,9 +2,9 @@
   <n-layout-content>
     <n-space vertical align="center">
       <p class="mt-10 font-medium">
-        Not Found
+        Ooops, wrong place.
       </p>
-      <router-link to="/">
+      <router-link :to="{ name: '_home' }">
         <p class="i-carbon-arrow-left animate-head-shake animate-duration-3000" />
       </router-link>
     </n-space>

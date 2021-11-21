@@ -15,12 +15,16 @@
     "forceConsistentCasingInFileNames": true,
     "types": [
       "vite/client",
-      "vite-plugin-pages/client"
     ],
     "paths": {
       "~/*": ["src/*"],
-      "~logic/*": ["src/logic/*"]
     }
   },
-  "exclude": ["dist", "node_modules"]
+  "include": [
+    "src/*"
+  ],
+  "exclude": [
+    "dist", 
+    "node_modules"
+  ]
 }

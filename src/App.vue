@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useAuth } from './logic/Auth/composables/auth'
-import { useTheme } from '~logic/Shared/composables'
+import { useAuth } from '~/logic/Auth/composables/auth'
+import { useTheme } from '~/logic/Shared/composables'
 import { store } from '~/logic/Auth/store'
 
 const { externalUITheme, isDark, themeOverrides } = useTheme()

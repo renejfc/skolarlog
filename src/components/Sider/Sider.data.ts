@@ -7,14 +7,14 @@ function renderIcon(iconClass: string) {
 
 function renderRouterLink(route: string) {
   return () => h(RouterLink,
-    { to: route, params: {} },
+    { to: { name: route }, params: {} },
     { default: () => 'Sesión' },
   )
 }
 
 export const SiderItems: (MenuGroupOption | MenuOption)[] = [
   {
-    label: renderRouterLink('/auth/login'),
+    label: renderRouterLink('_login'),
     key: 'auth',
     icon: renderIcon('i-carbon-login'),
   },
