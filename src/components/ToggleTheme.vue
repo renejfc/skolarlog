@@ -10,11 +10,9 @@ const { themeShift, isDark } = useTheme()
     circle
     size="large"
     dashed
-    class="absolute right-8 top-6 z-50"
+    class="z-1"
     @click="themeShift()"
   >
-    <span :class=" isDark ? 'i-carbon-moon' : 'i-carbon-sun'" />
+    <span :class="isDark ? 'i-carbon-moon' : 'i-carbon-sun'" />
   </n-button>
 </template>
-
-<style scoped lang="css"></style>

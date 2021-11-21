@@ -18,13 +18,17 @@ onMounted(() => {
       <n-layout
         has-sider
         :bordered="!isDark"
-        class="text-base font-sans"
+        class="text-base font-sans min-h-screen"
       >
         <sider />
-        <n-layout class="p-8">
+        <n-layout
+          content-style="padding: 6rem 2rem; height: 100%;"
+          :native-scrollbar="false"
+          class="h-screen"
+        >
+          <heading />
           <router-view />
         </n-layout>
-        <toggle-theme />
       </n-layout>
     </n-message-provider>
   </n-config-provider>
